@@ -25,7 +25,7 @@ public class MailSender {
 		 * env.getProperty("spring.mail.password");
 		 */
 
-		String subject = "Login Confirmation";
+		String subject = "Login Confirmation ";
 		String message = "You have logged in successfully. Your One Time Password is :" + otp;
 		String status;
 
