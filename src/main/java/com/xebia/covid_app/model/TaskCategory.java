@@ -15,14 +15,14 @@ import javax.persistence.Table;
 public class TaskCategory {
 
 	@Id
-	@Column(name = "ID",nullable = false,insertable=false, updatable=false)
+	@Column(name = "ID")
 	private int taskCategoryId;
 	
-	@Column(name = "ID", nullable = false)
+	@Column(name = "DESCRIPTION", nullable = false)
 	private String descrition;
 	
 	@OneToMany(cascade=CascadeType.ALL)
-	@JoinColumn(name="TASK_ID",insertable=false, updatable=false)
+	@JoinColumn(name="TASK_ID")
 	private List<Task> task;
 	
 	
